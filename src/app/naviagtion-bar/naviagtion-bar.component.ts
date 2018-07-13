@@ -1,21 +1,27 @@
 import { Component, OnInit } from '@angular/core';
+import { BarState } from '../BarState';
 
 @Component({
   selector: 'app-naviagtion-bar',
   templateUrl: './naviagtion-bar.component.html',
   styleUrls: ['./naviagtion-bar.component.css']
 })
+
+
+
 export class NaviagtionBarComponent implements OnInit {
 
-  CurrPage: number;
-
   constructor() {
-    this.CurrPage = 0;
   }
 
-  ngOnInit() {}
+  ngOnInit() {
+  }
 
-  onSelect(value: number): void {
-    this.CurrPage = value;
+  GetState(): number {
+      return BarState.value;
   }
 }
+
+
+
+

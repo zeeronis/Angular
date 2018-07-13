@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { BarState } from '../BarState';
+
 
 @Component({
   selector: 'app-heroes',
@@ -7,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeroesComponent implements OnInit {
 
-  constructor() { }
+  constructor() {    BarState.value = 1; }
 
   ngOnInit() {
   }

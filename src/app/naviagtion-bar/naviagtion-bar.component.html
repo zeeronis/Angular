@@ -1,6 +1,6 @@
 <ul>
-  <li><a [className]="(CurrPage == 0) ? 'active' : 'inactive'" (click)="onSelect(0)" [routerLink]="['']">Home</a></li>
-  <li><a [className]="(CurrPage == 1) ? 'active' : 'inactive'" (click)="onSelect(1)" [routerLink]="['/heroes']">Heroes</a></li>
-  <li><a [className]="(CurrPage == 2) ? 'active' : 'inactive'" (click)="onSelect(2)" [routerLink]="['/altar']">Altar</a></li>
+  <li><a [className]="(GetState() == 0) ? 'active' : 'inactive'" [routerLink]="['']">Home</a></li>
+  <li><a [className]="(GetState() == 1) ? 'active' : 'inactive'" [routerLink]="['/heroes']">Heroes</a></li>
+  <li><a [className]="(GetState()  == 2) ? 'active' : 'inactive'" [routerLink]="['/altar']">Altar</a></li>
 </ul>
         

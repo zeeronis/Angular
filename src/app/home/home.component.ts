@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { BarState } from '../BarState';
 
 @Component({
   selector: 'app-home',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  constructor() {  BarState.value = 0; }
 
   ngOnInit() {
   }
