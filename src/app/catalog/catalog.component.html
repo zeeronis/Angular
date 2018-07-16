@@ -1,0 +1,28 @@
+<div>
+    <div id="left-panel">
+        <hr>
+            <ul>
+                <a>Bags</a>
+                <a>Clothings</a>
+                <a>Shoes</a>
+                <a>Accessories</a>
+            </ul>
+        <hr>  
+    </div>     
+    <div id="body">
+        <div class="ShopItem" *ngFor="let number of numbers">
+            <div class="ShopItemName"><a>Product name</a></div>
+            <div class="ShopItemImage">
+                <img src={{GetRndImg()}}
+                    alt="prosuct image">
+            </div>
+            <div class="ShopItemCost"><a>{{randomInt(5,200)}}$</a></div>
+            <div class="ShopItemButton">
+                <button><span>Add to cart </span></button>
+            </div>
+        </div>    
+    </div>  
+    
+    
+</div>
+
