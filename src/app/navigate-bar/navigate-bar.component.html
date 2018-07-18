@@ -1,7 +1,7 @@
 
 
 <ul>
-    <li *ngFor="let item of router.config"><a routerLink={{item.path}} routerLinkActive="active" 
+    <li *ngFor="let item of GetTabs()"><a routerLink={{item.path}} routerLinkActive="active" 
       [routerLinkActiveOptions]="{exact:true}">{{item.component | transTabNamePipe}}</a></li>
 </ul> <hr>
   

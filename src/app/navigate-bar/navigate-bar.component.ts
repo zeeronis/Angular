@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { Router, Routes } from '@angular/router';
 
 @Component({
   selector: 'app-navigate-bar',
@@ -8,15 +8,21 @@ import { Router } from '@angular/router';
 })
 export class NavigateBarComponent implements OnInit {
 
-  private router: any = [];
-  constructor(private router_: Router) {
-    this.router = router_;
-    for (let index = 0; index < this.router.config; index++) {
-      console.log('log:' + this.router.config[index]);
-    }
+  route: any;
+
+  constructor(private route_: Router) {
+    this.route = route_;
   }
 
   ngOnInit() {
+  }
+
+  GetTabs():  Array<Routes> {
+    const arr: Array<Routes> = new Array<Routes>();
+    for (let index = 0; index < 3; index++) {
+      arr.push(this.route.config[index]);
+    }
+    return arr;
   }
 
 }

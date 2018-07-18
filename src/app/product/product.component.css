@@ -1,0 +1,103 @@
+a {
+    color: #000000;
+    font-family: 'Open Sans',Arial,Helvetica,Verdana,sans-serif;
+}
+
+.ShopItemName a {
+    cursor: pointer;   
+}
+
+.ShopItemName a:hover {
+    color: #038ae4;
+}
+
+.ShopItem {
+    position: relative;
+    background: #fff;
+    border: 1px solid #eaeaea;
+    margin: 10px;
+    float: left;
+    width: 188px;
+    height: 198px;
+}
+
+.ShopItem:hover {
+    border: 1px solid rgb(192, 190, 190);
+}
+
+.ShopItemName {
+    text-align: left;
+    margin: 6px 7px;
+    background-color: white;
+    position: absolute;
+}
+
+.ShopItemImage {
+    text-align: center; 
+    position: absolute;
+    margin: 33px 8px;
+}
+
+.ShopItemImage img {
+    max-width: 170px;
+    max-height: 120px;
+}
+
+.ShopItemCost {
+    margin: 170px 10px;
+    background-color: white;
+    float: left;
+    position: absolute;
+    font-weight: bold;
+}
+
+
+.ShopItemButton {
+    margin: 169px 100px;
+    position: absolute;
+    width: 88px;
+}
+
+.ShopItemButton button {
+    border-radius: 4px;
+    background-color: #f4511e;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    cursor: pointer;   
+    outline: none;
+}   
+.ShopItemButton button:hover {
+    transform: translateX(-10px);
+    transition: 0.2s;
+}
+
+.ShopItemButton button span {
+    display: inline-block;
+    position: relative;
+    transition: 0.2s;
+}
+  
+.ShopItemButton button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    margin: -1px;
+    right: -10px;
+    transition: 0.2s;
+}
+  
+.ShopItemButton button:hover span {
+    padding-right: 10px;
+}
+  
+.ShopItemButton button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.ShopItemButton button:active {
+    background-color: #3e8e41;
+    transition: 0s;
+}

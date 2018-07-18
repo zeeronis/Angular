@@ -1,3 +1,36 @@
 
 
-<img style="width: 160px" src="http://appcenter.bronto.com/wp-content/uploads/2017/03/9.1_CORP_appCenter_icon_cart_recovery@2x.png" alt="">
+
+       
+<div>
+    <table>
+
+        <tr>
+          <th>Delete</th>
+          <th>Product</th>
+          <th></th>
+          <th>Amount</th>
+          <th>Cost</th>
+        </tr>   
+        
+        <tbody>
+            <tr *ngFor="let item of shopService.GetProductsInCart()">
+                <td class="remove"> <a clickable (click)="Remove($event)" id={{item.product.id}}>X</a> </td>
+                <td class="img"> <img src={{item.product.imgSource}} alt="[img]"> </td>
+                <td class="disc">{{item.product.name}}</td>
+                <td class="amount"> <input value={{item.amount}} id={{item.product.id}} (change)=ChangeAmount($event) maxlength="6" size="5"> </td>
+                <td class="price">{{item.product.cost * item.amount}}$</td>
+            </tr>
+
+            <tr>
+                <td colspan="5" class="subtotal">
+                    <span>Total: </span>
+                    <span>{{getTotal()}}$</span>
+                </td>
+            </tr>
+        </tbody>
+
+      </table>
+
+      <button>Confirm order</button>
+</div>

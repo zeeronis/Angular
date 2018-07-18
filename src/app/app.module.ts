@@ -7,6 +7,7 @@ import { HomeComponent } from './home/home.component';
 import { TransTabNamePipe } from './TransTabNamePipe';
 import { CatalogComponent } from './catalog/catalog.component';
 import { CartComponent } from './cart/cart.component';
+import { ProductComponent } from './product/product.component';
 
 const appRoutes: Routes = [
   {path: '', component: HomeComponent},
@@ -21,7 +22,8 @@ const appRoutes: Routes = [
     HomeComponent,
     TransTabNamePipe,
     CatalogComponent,
-    CartComponent
+    CartComponent,
+    ProductComponent,
   ],
   imports: [
     BrowserModule, RouterModule,

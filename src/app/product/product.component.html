@@ -1,0 +1,12 @@
+
+
+<div class="ShopItem">
+  <div class="ShopItemName"><a>{{product.name}}</a></div>
+  <div class="ShopItemImage">
+      <img src={{product.imgSource}} alt="prosuct image">
+  </div>
+  <div class="ShopItemCost"><a>{{product.cost}}$</a></div>
+  <div class="ShopItemButton">
+      <button (click)="AddToCart($event)"><span>Add to cart </span></button>
+  </div>
+</div>    

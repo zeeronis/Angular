@@ -1,0 +1,119 @@
+
+div {
+  width: auto;
+  padding: 10px;
+  max-width: 900px;
+  border-collapse: collapse;
+  margin: 0px auto 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ddd;
+    white-space: nowrap;
+}
+
+th {
+  border-bottom: 2px solid rgb(170, 170, 170);
+  background-color: white;
+  font-size: 13px;
+  font-family: 'Oswald',sans-serif;
+  font-weight: bold;
+  text-align: left;
+  padding: 8px;
+}
+
+td {
+  color: #333;
+  padding: 8px;
+}
+
+td.price {
+  width: 8%;
+  text-align: center;
+}
+
+td.amount {
+  width: 8%;
+  text-align: center;
+}
+
+td.amount input { 
+  text-align: center;
+  background: transparent;
+  border: none;
+}
+
+td.remove {
+  width: 8%;
+  text-align: left;
+  font-weight: bold;
+  color: red;
+}
+
+td.remove a {
+  cursor: pointer;
+}
+
+td.img {
+  width: 6%;
+  text-align: left;
+}
+
+td.disc {
+  text-align: left;
+  font-weight: bold;
+}
+
+td.subtotal {
+  text-align: right;
+}
+
+td.subtotal span {
+  font-weight: bold;
+}
+
+tr {
+  background-color: rgb(243, 243, 243);
+  border: 1px solid #ddd;
+}
+
+tr:nth-of-type(odd) {
+  background-color: rgb(231, 231, 231);
+}
+
+tr:hover {
+  background-color: rgb(219, 219, 219);
+}
+
+img {
+  max-width: 50px; 
+}
+
+button {
+  margin: 10px 5px;
+  float: right;
+
+}
+
+button {
+  border-radius: 2px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  cursor: pointer;   
+  outline: none;
+  font-weight: bold;
+  font-size: 20px;
+}   
+
+button:hover {
+  background-color: #ff764d;
+}
+
+button:active {
+  background-color: #3e8e41;
+  transition: 0s;
+}
